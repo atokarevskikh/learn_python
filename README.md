@@ -1,2 +1,2 @@
 # learn_python
-Fist view at Pthon. Hello world etc.
+Fist view at Python. Hello world etc.
