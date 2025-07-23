@@ -7,15 +7,17 @@ print('Start program')
 #        21, 23, 25, 27, 29, 31, 33, 35, 37, 39,
 #        41, 43, 45, 47, 49, 51, 53, 55, 57, 59]
 # list comprehension
-odds = [n for n in range(1, 60, 2)]
+#odds = [n for n in range(1, 60, 2)]
+odds = list(range(1, 60, 2))
 print(odds)
 for i in range(5):
-    right_this_minute = datetime.today().minute
-    if right_this_minute in odds:
-        print(f'Minutes {right_this_minute: 2d} is odd')
+    right_this_second = datetime.today().second
+    if right_this_second in odds:
+        print(f'Seconds {right_this_second:2d} is odd')
     else:
-        print(f'Minutes {right_this_minute: 2d} is even')
-    rnd = random.randint(1, 20)
-    print(f'Sleep for {rnd: 2d} seconds')
-    time.sleep(rnd)
+        print(f'Seconds {right_this_second:2d} is even')
+    if i < 4:
+        rnd = random.randint(1, 20)
+        print(f'Sleep for {rnd:2d} seconds')
+        time.sleep(rnd)
 print('The end')
