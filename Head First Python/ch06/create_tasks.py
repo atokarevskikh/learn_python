@@ -1,0 +1,5 @@
+todos = open('todos.txt', 'a')
+print('Wake up early', file=todos)
+print('Let my dog to walk', file=todos)
+print('Feed my cats', file=todos)
+todos.close()
