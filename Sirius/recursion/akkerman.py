@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(100000)
+
 def Akkerman(m: int, n: int) -> int:
     if m == 0:
         return n + 1
